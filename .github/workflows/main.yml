@@ -5,13 +5,12 @@ on:
     branches: [master]
   pull_request:
     branches: [master]
-    
-    
+
 jobs:
   build:
-    runs-on: ubuntu_latest
-    
+    runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@v3
-    - name: run make command
-      run: make hello
+      - uses: actions/checkout@v3
+      - name: run make command
+        run: make hello
